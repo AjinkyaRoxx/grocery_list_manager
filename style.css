@@ -1,0 +1,30 @@
+:root { 
+    /* Dark Theme Variables */
+    --primary: #00ffc6; 
+    --secondary: #6a11cb;
+    --bg: #0a0b1b;
+    --text: #e0e0e0;
+    --panel: rgba(255, 255, 255, 0.05);
+}
+
+body.light { 
+    /* Light Theme Variables */
+    --bg: #ffffff; 
+    --text: #111111; 
+    --panel: rgba(0, 0, 0, 0.05); 
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: background 0.3s ease;
+}
