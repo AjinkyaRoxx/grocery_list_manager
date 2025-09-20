@@ -1,4 +1,4 @@
-import { auth } from './firebaseConfig.js';
+import { auth } from './firebase-config.js';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } 
   from 'https://www.gstatic.com/firebasejs/10.6.1/firebase-auth.js';
 
@@ -38,3 +38,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if(user) window.location.href='dashboard.html';
     });
 });
+
